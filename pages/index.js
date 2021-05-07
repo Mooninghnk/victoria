@@ -1,5 +1,5 @@
 import img from "../public/images/google-logo.png";
-
+import 'tailwindcss/tailwind.css'
 const Login = () => {
   return (
     <div
