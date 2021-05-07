@@ -1,10 +1,13 @@
 import img from "../public/images/google-logo.png";
 import 'tailwindcss/tailwind.css'
+import back from "../public/images/background.svg";
+
 const Login = () => {
   return (
     <div
+    style={{background: `url(${back})`, backgroundColor: "#FD49A0"}}
       className={
-        "min-h-screen bg-gray-100 text-gray-800 antialiased py-6 flex-col justify-center sm:py-12"
+        "min-h-screen bg-purple-600 text-gray-800 antialiased py-6 flex-col justify-center sm:py-12"
       }
     >
       <div className={"p-4 relative py-3 sm:max-w-xl sm:mx-auto text-center "}>
