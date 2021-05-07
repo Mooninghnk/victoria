@@ -15,7 +15,7 @@ const Login = () => {
         "min-h-screen bg-purple-600 text-gray-800 antialiased py-6 flex-col justify-center sm:py-12"
       }
     >
-      <div className={"p-4 relative py-3 sm:max-w-xl sm:mx-auto text-center "}>
+      <div className={"relative py-3 sm:max-w-xl sm:mx-auto text-center "}>
         <div className={"mt-4 bg-white shadow-md rounded-lg "}>
           <div className={"h-2 bg-indigo-400 rounded-t-md "}></div>
 
