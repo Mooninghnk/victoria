@@ -5,3 +5,8 @@ module.exports = nextImages({
   // options
   esModule: true,
 });
+
+module.exports = {
+  // Target must be serverless
+  target: "serverless",
+};
