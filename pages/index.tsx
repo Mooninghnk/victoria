@@ -1,4 +1,4 @@
-import img from "../public/images/google-logo.png";
+import img from "../public/images/user.png";
 import "tailwindcss/tailwind.css";
 import back from "../public/images/background.svg";
 import emailico from "../public/images/email_black_24dp.svg";
@@ -62,9 +62,9 @@ const Login = () => {
             <br />
             <br />
             <div className={"px-10 py-6 text-center"}>
-              <button className="bg-gray-200 hover:bg-gray-400 text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
+              <button className="bg-gray-200 hover:bg-gray-400 text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center" onClick={() => location.href="/register"}>
                 <img className={"w-10 h-10 mr-9"} src={img}></img>
-                <span> Login using Google</span>
+                <span>Register an Account</span>
               </button>
 
               <br />
