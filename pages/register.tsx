@@ -17,7 +17,7 @@ const Login = () => {
   const [fail, setF] = useState("none");
 
   const authLogin = async (login: string, pass: string) => {
-    const req = await axios.post("/api/login", { email: login, pass: pass });
+    const req = await axios.post("/api/reg", { email: login, pass: pass });
     console.log(fail)
     if (req.data.id === 1) {
       setLog(true);
@@ -62,9 +62,9 @@ const Login = () => {
             <br />
             <br />
             <div className={"px-10 py-6 text-center"}>
-              <button className="bg-gray-200 hover:bg-gray-400 text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center" onClick={() => location.href="/register"}>
+              <button className="bg-gray-200 hover:bg-gray-400 text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center" onClick={() => location.href="/login"}>
                 <img className={"w-10 h-10 mr-9"} src={img}></img>
-                <span>Register an Account</span>
+                <span>Login insted</span>
               </button>
 
               <br />
