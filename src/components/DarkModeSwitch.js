@@ -10,19 +10,15 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 
 
-import {Box, Image} from "@chakra-ui/react"
 export const DarkModeSwitch = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [display, changeDisp] = useState("none");
   return (
-    <Flex>
+    <Flex >
       <Flex pos="fixed" top="1rem" right="1rem" align="center">
         <Flex display={["none", "none", "flex", "flex"]}>
-       
-        <Box boxSize="sm">
-  <Image src="https://bit.ly/sage-adebayo" alt="Segun Adebayo" />
-</Box>
+      
           <NextLink href="/home" passHref>
             <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
               Home

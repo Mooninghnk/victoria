@@ -13,9 +13,10 @@ import { Main } from "../components/Main";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
 
 import { Footer } from "../components/Footer";
-
+import img from "../public/icons/background.svg";
 const Index = () => (
-  <Container height="100vh">
+  <div style={{backgroundImage: `url(${img})`}}>
+  <Container style={{backgroundImage: `url(${img})`}} height="100vh">
     <Hero />
     <Main>
       <Text>
@@ -48,6 +49,7 @@ const Index = () => (
       <Text>Victoria❤️</Text>
     </Footer>
   </Container>
+  </div>
 );
 
 export default Index;
