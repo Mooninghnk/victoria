@@ -8,7 +8,7 @@ import {
 import { useState } from "react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
-import Logo from "./Logo";
+
 
 import {Box, Image} from "@chakra-ui/react"
 export const DarkModeSwitch = () => {
