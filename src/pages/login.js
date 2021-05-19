@@ -30,6 +30,11 @@ const Login = () => {
       <Center display="flex" h="100px">
         <Flex align="center" display="flex" color="black">
           <Box
+            maxW={"450px"}
+            w={"full"}
+            boxShadow={"2xl"}
+            rounded={"md"}
+            overflow={"hidden"}
             w="100%"
             rounded="lg"
             borderRadius="lg"
@@ -44,7 +49,7 @@ const Login = () => {
               <Heading m="1" mb="0" as="h2" color="black" size="lg">
                 Login
               </Heading>
-              <br/>
+              <br />
               <Box>
                 <Button
                   leftIcon={<FcAddDatabase />}
@@ -55,7 +60,7 @@ const Login = () => {
                   Sign Up
                 </Button>
               </Box>
-              <br/>
+              <br />
               <Box>
                 <Input
                   textAlign="center"
@@ -66,7 +71,7 @@ const Login = () => {
                   color="black"
                 />
               </Box>{" "}
-              <br/>
+              <br />
               <Box>
                 <Input
                   textAlign="center"
@@ -77,7 +82,7 @@ const Login = () => {
                   color="black"
                 />
               </Box>
-              <br/>
+              <br />
               <Box>
                 <Button
                   marginTop="1em"
