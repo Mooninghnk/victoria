@@ -15,40 +15,43 @@ import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { Footer } from "../components/Footer";
 import img from "../public/icons/background.svg";
 const Index = () => (
-  <div style={{backgroundImage: `url(${img})`}}>
-  <Container style={{backgroundImage: `url(${img})`}} height="100vh">
-    <Hero />
-    <Main>
-      <Text>
-        Victoria <Code>Saving</Code> + <Code>World</Code>.
-      </Text>
+  <div style={{ backgroundImage: `url(${img})` }}>
+    <Container style={{ backgroundImage: `url(${img})` }} height="100vh">
+      <Hero />
+      <Main>
+        <Text>
+          Victoria <Code>Saving</Code> + <Code>World</Code>.
+        </Text>
 
-      <List spacing={3} my={0}>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Bandanas <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Binance Token <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
-    </Main>
+        <List spacing={3} my={0}>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="green.500" />
+            <ChakraLink
+              isExternal
+              href="https://chakra-ui.com"
+              flexGrow={1}
+              mr={2}
+            >
+              Bandanas <LinkIcon />
+            </ChakraLink>
+          </ListItem>
+          <ListItem>
+            <ListIcon as={CheckCircleIcon} color="green.500" />
+            <ChakraLink
+              isExternal
+              href="https://nextjs.org"
+              flexGrow={1}
+              mr={2}
+            >
+              Binance Token <LinkIcon />
+            </ChakraLink>
+          </ListItem>
+        </List>
+      </Main>
 
-    <DarkModeSwitch />
-    <Footer>
-      <Text>Victoria❤️</Text>
-    </Footer>
-  </Container>
+      <DarkModeSwitch />
+    </Container>
+
   </div>
 );
 

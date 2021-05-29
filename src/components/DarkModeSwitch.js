@@ -19,7 +19,7 @@ export const DarkModeSwitch = () => {
       <Flex pos="fixed" top="1rem" right="1rem" align="center">
         <Flex display={["none", "none", "flex", "flex"]}>
       
-          <NextLink href="/home" passHref>
+          <NextLink href="/" passHref>
             <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
               Home
             </Button>

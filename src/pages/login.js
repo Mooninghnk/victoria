@@ -16,7 +16,7 @@ import img from "../public/icons/background.svg";
 const Login = () => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
-  
+
   return (
     <Container
       style={{ backgroundImage: `url(${img})` }}
@@ -25,21 +25,16 @@ const Login = () => {
       justifyContent="center"
       color="black"
     >
-      <Flex
-        direction="column"
-        bg="white"    
-        p={20}
-        rounded={6}
-      >
-        <Heading   mb={6}>Login</Heading>
-        <br/>
+      <Flex direction="column" bg="white" p={20} rounded={6}>
+        <Heading mb={6}>Login</Heading>
+        <br />
         <Input
           placeholder="email@gmail.com"
           variant="filled"
           mb={3}
           type="email"
         />
-        <br/>
+        <br />
         <InputGroup size="md">
           <Input
             placeholder="**********"
@@ -47,7 +42,7 @@ const Login = () => {
             mb={6}
             type={show ? "text" : "password"}
           />
-          
+
           <InputRightElement width="4.5rem">
             <Button h="1.75rem" size="sm" onClick={handleClick}>
               {show ? "Hide" : "Show"}
